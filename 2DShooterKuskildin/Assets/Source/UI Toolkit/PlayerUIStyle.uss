@@ -1,0 +1,199 @@
+.header {
+}
+
+.button {
+    width: 440px;
+    height: 80px;
+    left: 740px;
+    top: 390px;
+    right: 740px;
+    bottom: 390px;
+    -unity-font-definition: none;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: scale-and-crop;
+    background-image: url('project://database/Assets/Source/Sprites/UI/Button/Button_background.png?fileID=24635553&guid=616dd04336fe80945815b86e7d352c99&type=3#Union_0');
+    margin-bottom: 0;
+    transform-origin: center;
+    position: absolute;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+}
+
+.panel-background {
+    background-image: url('project://database/Assets/Source/Sprites/UI/GamePanelBackground.png?fileID=-1184324273&guid=47aa64a497c129047bfccc12859db4c6&type=3#GamePanelBackground_0');
+}
+
+.panel-with-text {
+    -unity-text-align: middle-center;
+    font-size: 19px;
+    background-image: url('project://database/Assets/Source/Sprites/UI/GamePanelBackground.png?fileID=2800000&guid=47aa64a497c129047bfccc12859db4c6&type=3#GamePanelBackground');
+    -unity-background-scale-mode: scale-to-fit;
+    width: 125px;
+    height: 40px;
+}
+
+.weapon-button {
+    width: 210px;
+    height: 190px;
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponButton.png?fileID=21300000&guid=ec4393bee1c60884a96e7e1ddff39f1f&type=3#WeaponButton');
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgb(0, 0, 0);
+    color: rgba(27, 27, 27, 0);
+}
+
+.weapon-panel {
+    width: 210px;
+    height: 235px;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+}
+
+.weapon-name {
+    width: 210px;
+    height: 50px;
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponName.png?fileID=21300000&guid=ee5d601d882437b46aba88f59f81d3de&type=3#WeaponName');
+}
+
+.weapon-scroll-view {
+    margin: 0;
+    height: 500px;
+    width: 290px;
+}
+
+.unity-base-slider {
+    overflow: visible;
+    width: 30px;
+    height: 500px;
+    align-items: center;
+}
+
+.unity-scroller--vertical {
+    width: 30px;
+    height: 500px;
+    align-items: center;
+}
+
+.unity-base-slider__input {
+    width: 30px;
+    height: 500px;
+    align-items: center;
+}
+
+.unity-base-slider__drag-container {
+    width: 30px;
+    height: 500px;
+}
+
+.unity-scroller__high-button {
+    display: none;
+}
+
+.unity-scroller__low-button {
+    display: none;
+}
+
+.unity-base-slider__tracker {
+    width: 30px;
+    height: 500px;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponScrollViewTracker.png?fileID=21300000&guid=35cecb9204b2d614e9d1aa7941289997&type=3#WeaponScrollViewTracker');
+    -unity-background-scale-mode: stretch-to-fill;
+    border-width: 0;
+}
+
+.unity-base-slider__dragger {
+    max-height: 100px;
+    width: 28px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponScrollViewSlider.png?fileID=21300000&guid=4377396699f53f840a7b564f6a26a875&type=3#WeaponScrollViewSlider');
+    -unity-background-scale-mode: stretch-to-fill;
+    border-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.unity-base-slider__dragger-border {
+    margin-top: 0;
+}
+
+.health-progress-bar {
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    overflow: visible;
+}
+
+.unity-progress-bar__background {
+    width: 200px;
+    height: 47px;
+    background-image: url('project://database/Assets/Source/Sprites/UI/GamePanelBackground.png?fileID=-1184324273&guid=47aa64a497c129047bfccc12859db4c6&type=3#GamePanelBackground_0');
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+.unity-progress-bar__progress {
+    height: 32px;
+    background-color: rgb(224, 34, 34);
+    border-radius: 5px;
+    margin-right: 3px;
+    margin-top: 4px;
+}
+
+.unity-progress-bar__container {
+    max-height: 100px;
+    min-height: 1px;
+    width: 200px;
+    height: 40px;
+}
+
+.weaponImage {
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 130px;
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/PistolImage.png?fileID=21300000&guid=4454101e2a95ffa46afaf1c643c7fd02&type=3#PistolImage');
+}
+
+.weapon-name {
+}
+
+.weapon-name-text {
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/%D0%BF%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82.png?fileID=21300000&guid=5f33120352b952a429862f46a67df52f&type=3#пистолет');
+    width: 112px;
+    height: 28px;
+    -unity-background-scale-mode: stretch-to-fill;
+    align-items: center;
+    justify-content: center;
+}
+
+.weapon-button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponSelectedButton.png?fileID=21300000&guid=e13acecd24faaa146aa689281ce8fc77&type=3#WeaponSelectedButton');
+}
+
+.weapon-button:active {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponSelectedButton.png?fileID=21300000&guid=e13acecd24faaa146aa689281ce8fc77&type=3#WeaponSelectedButton');
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.41);
+    scale: 1.1 1.1;
+}
+
+.weapon-button:focus {
+    background-image: url('project://database/Assets/Source/Sprites/UI/Weapons/WeaponSelectedButton.png?fileID=21300000&guid=e13acecd24faaa146aa689281ce8fc77&type=3#WeaponSelectedButton');
+}
+
+.finalText {
+    color: rgba(255, 255, 255, 255);
+    -unity-font: url('project://database/Assets/Source/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=56e57a323c81c1044abb32fe2ba08ec6&type=3#NotInter-Regular');
+    font-size: 35px;
+}

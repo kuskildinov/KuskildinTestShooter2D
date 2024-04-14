@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/PlayerUIStyle.uss?fileID=7433441132597879392&amp;guid=92333cb972da8f64199d9fcb7432ab5e&amp;type=3#PlayerUIStyle" />
+    <ui:VisualElement name="Container" style="opacity: 1; width: 1920px; height: 1080px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); overflow: visible; visibility: visible;">
+        <ui:VisualElement name="HealthPanel" style="flex-direction: column; position: relative; left: auto; top: auto; justify-content: center; align-items: stretch; background-image: none;">
+            <ui:ProgressBar value="100" name="HealthProgressBar" usage-hints="None" high-value="100" low-value="0" focusable="false" class="health-progress-bar" style="width: 200px; height: 40px; left: 74px; top: 45px; position: absolute; flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; scale: 1 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-bottom: 0; -unity-background-scale-mode: stretch-to-fill; transform-origin: right;" />
+            <ui:VisualElement name="HPImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/HP/HpImage.png?fileID=21300000&amp;guid=f50cdfdba340bad40bd384bf4200c037&amp;type=3#HpImage&apos;); width: 70px; height: 60px; -unity-background-scale-mode: scale-to-fit; left: 35px; top: 35px; position: absolute; align-items: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScorePanel" style="flex-grow: 0; height: auto; opacity: 1; width: auto; left: auto; top: auto; position: relative;">
+            <ui:VisualElement name="scoreBackground" class="panel-background panel-with-text" style="justify-content: center; position: absolute; left: 410px; top: 45px; align-items: center;">
+                <ui:Label text="0&#10;" display-tooltip-when-elided="true" class="panelText panel-text" style="-unity-font-definition: url(&apos;project://database/Assets/Downloads/Fonts/PIXY%20SDF.asset?fileID=11400000&amp;guid=27c492b022fef4e46b61396627e7591f&amp;type=2#PIXY SDF&apos;); font-size: 27px; padding-left: 0; padding-top: 0; padding-bottom: 0; height: 31px; padding-right: 0; -unity-text-align: upper-center; width: 93px; -unity-font: url(&apos;project://database/Assets/Downloads/Fonts/PIXY.ttf?fileID=12800000&amp;guid=bb546dbebfa8d48469edd706486fb423&amp;type=3#PIXY&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ScoreImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Score/ScoreImage.png?fileID=21300000&amp;guid=73797285e5f9ddd49ab287cede440191&amp;type=3#ScoreImage&apos;); width: 66px; height: 60px; top: 35px; left: 375px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="EnemyWavesPanel" style="flex-direction: row; justify-content: space-around; align-items: flex-start; width: auto; height: auto; position: absolute; top: auto; left: auto; background-color: rgba(0, 0, 0, 0); flex-grow: 0;">
+            <ui:VisualElement name="EnemyWavesBackground" class="panel-background panel-with-text" style="width: 171px; left: 684px; top: 45px; position: absolute; align-items: center; -unity-background-scale-mode: stretch-to-fill;">
+                <ui:Label text="Волна #1" display-tooltip-when-elided="true" class="panelText panel-text" style="-unity-font-definition: url(&apos;project://database/Assets/Downloads/Fonts/PIXY%20SDF.asset?fileID=11400000&amp;guid=27c492b022fef4e46b61396627e7591f&amp;type=2#PIXY SDF&apos;); font-size: 25px; -unity-text-align: middle-center; white-space: nowrap; -unity-font: url(&apos;project://database/Assets/Downloads/Fonts/PIXY.ttf?fileID=12800000&amp;guid=bb546dbebfa8d48469edd706486fb423&amp;type=3#PIXY&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SkullImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/EnemyWaves/SkullImage.png?fileID=21300000&amp;guid=cbf06b581eaafdd41a0392df575e7aa3&amp;type=3#SkullImage&apos;); width: 70px; height: 70px; position: absolute; left: 635px; top: 30px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="WeaponPanel" style="flex-grow: 1; align-items: flex-end; justify-content: flex-end; -unity-background-scale-mode: stretch-to-fill; -unity-text-align: middle-left; overflow: hidden; visibility: visible; flex-direction: column; position: relative;">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="WeaponScrollView" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" class="weapon-scroll-view" style="right: 20px; bottom: 20px;">
+                <ui:VisualElement name="PistolPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:VisualElement name="PistolButton" class="weapon-button" />
+                    <ui:VisualElement name="PistolName" class="weapon-name" />
+                </ui:VisualElement>
+                <ui:VisualElement name="RevolverPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:VisualElement name="PistolButton" class="weapon-button" />
+                    <ui:VisualElement name="PistolName" class="weapon-name" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ChootGunPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:VisualElement name="PistolButton" class="weapon-button" />
+                    <ui:VisualElement name="PistolName" class="weapon-name" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="TestImage" class="test-image testImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/GamePanelBackground.png?fileID=-1184324273&amp;guid=47aa64a497c129047bfccc12859db4c6&amp;type=3#GamePanelBackground_0&apos;); -unity-background-image-tint-color: rgb(224, 34, 34);" />
+</ui:UXML>

@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Source/UI%20Toolkit/PlayerUIStyle.uss?fileID=7433441132597879392&amp;guid=92333cb972da8f64199d9fcb7432ab5e&amp;type=3#PlayerUIStyle" />
+    <ui:VisualElement name="Container" style="opacity: 1; width: 1920px; height: 1080px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); overflow: visible; visibility: visible;">
+        <ui:VisualElement name="HealthPanel" style="flex-direction: column; position: absolute; left: auto; top: auto; justify-content: center; align-items: stretch; background-image: none; width: 1920px; height: 1080px;">
+            <ui:ProgressBar value="100" name="HealthProgressBar" usage-hints="None" high-value="100" low-value="0" focusable="false" class="health-progress-bar" style="position: absolute; left: 37px; top: 38px; flex-grow: 0;" />
+            <ui:VisualElement name="HPImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/HP/HpImage.png?fileID=21300000&amp;guid=f50cdfdba340bad40bd384bf4200c037&amp;type=3#HpImage&apos;); width: 70px; height: 60px; -unity-background-scale-mode: scale-to-fit; left: 35px; top: 35px; position: absolute; align-items: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScorePanel" style="flex-grow: 0; height: 1080px; opacity: 1; width: 1920px; left: auto; top: auto; position: absolute;">
+            <ui:VisualElement name="scoreBackground" class="panel-background panel-with-text" style="justify-content: center; position: absolute; left: 410px; top: 45px; align-items: center; height: 45px;">
+                <ui:Label text="0" display-tooltip-when-elided="true" name="ScoreText" style="width: 80px; height: 27px; -unity-font: none; color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ScoreImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Score/ScoreImage.png?fileID=21300000&amp;guid=73797285e5f9ddd49ab287cede440191&amp;type=3#ScoreImage&apos;); width: 66px; height: 60px; top: 35px; left: 375px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="EnemyWavesPanel" style="flex-direction: row; justify-content: space-around; align-items: flex-start; width: 1920px; height: 1080px; position: absolute; top: auto; left: auto; background-color: rgba(0, 0, 0, 0); flex-grow: 0;">
+            <ui:VisualElement name="EnemyWavesBackground" class="panel-background panel-with-text" style="width: 171px; left: 684px; top: 45px; position: absolute; align-items: center; -unity-background-scale-mode: stretch-to-fill;">
+                <ui:Label text="Волна #1" display-tooltip-when-elided="true" name="EnemyWaveNum" style="height: 33px; width: 115px; -unity-background-image-tint-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SkullImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/EnemyWaves/SkullImage.png?fileID=21300000&amp;guid=cbf06b581eaafdd41a0392df575e7aa3&amp;type=3#SkullImage&apos;); width: 70px; height: 70px; position: absolute; left: 635px; top: 30px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="WeaponPanel" style="flex-grow: 1; align-items: flex-end; justify-content: flex-end; -unity-background-scale-mode: stretch-to-fill; -unity-text-align: middle-left; overflow: hidden; visibility: visible; flex-direction: column; position: relative; background-color: rgba(0, 0, 0, 0);">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="WeaponScrollView" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" focusable="true" picking-mode="Ignore" class="weapon-scroll-view" style="right: 20px; bottom: 20px; justify-content: center; align-items: center; width: 267px; transform-origin: center;">
+                <ui:VisualElement name="PistolPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill; position: relative; border-top-width: 0; border-bottom-width: 0;">
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="PistolButton" class="weapon-button" style="justify-content: center; align-items: center; -unity-text-align: middle-right; height: 158px;">
+                        <ui:VisualElement class="weaponImage" style="background-color: rgba(0, 0, 0, 0);" />
+                    </ui:Button>
+                    <ui:VisualElement name="PistolName" style="align-items: center; justify-content: center; background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Weapons/WeaponName.png?fileID=21300000&amp;guid=ee5d601d882437b46aba88f59f81d3de&amp;type=3#WeaponName&apos;); width: 210px; height: 50px;">
+                        <ui:VisualElement class="weapon-name-text" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="RevolverPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="RevolverButton" class="weapon-button" style="height: 145px;">
+                        <ui:VisualElement class="weaponImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Weapons/RevolverImage.png?fileID=21300000&amp;guid=9b072dc9a9ccef04e888fc1918476093&amp;type=3#RevolverImage&apos;);" />
+                    </ui:Button>
+                    <ui:VisualElement name="RevolverName" class="weapon-name" style="justify-content: center; align-items: center;">
+                        <ui:VisualElement class="weapon-name weapon-name-text" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Weapons/%D1%80%D0%B5%D0%B2%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D1%80.png?fileID=21300000&amp;guid=82c02f2954eac144e9b80329d892763a&amp;type=3#револьвер&apos;);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ShootGunPanel" class="weapon-panel" style="flex-grow: 0; flex-wrap: nowrap; flex-direction: column; align-items: center; justify-content: center; -unity-background-scale-mode: stretch-to-fill;">
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="ShootgunButton" class="weapon-button" style="height: 154px;">
+                        <ui:VisualElement class="weaponImage" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Weapons/ShootgunImage.png?fileID=21300000&amp;guid=b6eb4adbedf7494488b79fdd35a1e435&amp;type=3#ShootgunImage&apos;);" />
+                    </ui:Button>
+                    <ui:VisualElement name="ShootGunName" class="weapon-name" style="justify-content: center; align-items: center;">
+                        <ui:VisualElement class="weapon-name weapon-name-text" style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/Weapons/%D0%B4%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B8%D0%BA.png?fileID=21300000&amp;guid=6806a25c05937864595531a7c6282c53&amp;type=3#дробовик&apos;);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button text="Button" display-tooltip-when-elided="true" name="WeaponMenuButton" class="button" style="left: 1376px; top: 572px; right: 336px; bottom: 425px; width: 200px;">
+                <ui:Label text="Инвентарь" display-tooltip-when-elided="true" style="height: 52px; color: rgb(255, 255, 255); font-size: 25px; width: 168px; position: relative; justify-content: center; -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/Source/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=56e57a323c81c1044abb32fe2ba08ec6&amp;type=3#NotInter-Regular&apos;);" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

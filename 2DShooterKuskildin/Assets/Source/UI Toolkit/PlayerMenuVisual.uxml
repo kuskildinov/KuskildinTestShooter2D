@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/PlayerUIStyle.uss?fileID=7433441132597879392&amp;guid=92333cb972da8f64199d9fcb7432ab5e&amp;type=3#PlayerUIStyle" />
+    <ui:VisualElement name="Container" style="opacity: 1; width: 1920px; height: 1080px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); overflow: visible; visibility: visible;">
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="StartButton" class="button" style="bottom: 610px; position: absolute;">
+            <ui:IMGUIContainer style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/%D0%B8%D0%B3%D1%80%D0%B0%D1%82%D1%8C%20(1).png?fileID=21300000&amp;guid=0870cd24a24b6994c8885f383b3ea5db&amp;type=3#играть (1)&apos;); height: 48px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); position: absolute; width: 144px; left: 148px; right: 148px; top: 18px; bottom: 14px; align-items: auto; -unity-background-scale-mode: scale-to-fit;" />
+        </ui:Button>
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="SettingsButton" class="button" style="align-items: center; justify-content: center; -unity-text-align: middle-center; top: 500px; bottom: 500px; position: absolute;">
+            <ui:IMGUIContainer style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8.png?fileID=21300000&amp;guid=e41de39afe465c140a9458570ff6624e&amp;type=3#настройки&apos;); height: 48px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); position: absolute; width: 216px; left: 112px; right: 112px; top: 18px; bottom: 14px; align-items: auto; -unity-background-scale-mode: scale-to-fit;" />
+        </ui:Button>
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="ExitGameButton" class="button" style="top: 610px; bottom: 310px; position: absolute;">
+            <ui:IMGUIContainer style="background-image: url(&apos;project://database/Assets/Source/Sprites/UI/%D0%B2%D1%8B%D0%B9%D1%82%D0%B8%20%D0%B8%D0%B7%20%D0%B8%D0%B3%D1%80%D1%8B.png?fileID=21300000&amp;guid=3bc9eca552a516546bea07210f6c2d79&amp;type=3#выйти из игры&apos;); height: 48px; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(255, 255, 255); position: absolute; width: 312px; left: 64px; right: 64px; top: 18px; bottom: 14px; align-items: auto; -unity-background-scale-mode: scale-to-fit;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
